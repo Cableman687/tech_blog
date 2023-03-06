@@ -48,8 +48,11 @@ router.get('/login', (req, res) => {
 // Create a new user account
 router.get('/signup', (req, res) => {
 
-  res.render('signUp');
-  console.log("Test");
+  if (req.session.logged_in) {
+    res.redirect('/');
+  } else {
+    res.render('signUp');
+  }
 
 });
 
