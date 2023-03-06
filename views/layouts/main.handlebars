@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+</head>
+
+<body>
+  <header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      The Tech Blog
+    </h1>
+    {{!-- Only display the  logout button if the user is logged in --}}
+    {{#if logged_in}}
+    <nav>
+      <button type="button" class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}} 
+
+    {{#unless logged_in}}
+    <nav>
+      <button type="button" class="btn" id="login">login</button>
+    </nav>
+    {{/unless}} 
+
+     
+    <nav>
+      <button type="button" class="btn" id="home">Home</button>
+    </nav>
+     <nav>
+      <button type="button" class="btn" id="dashboard-button">Dashboard</button>
+    </nav>
+
+
+    
+  </header>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  <footer>
+      
+  </footer>
+
+  <script src="/js/transferToHome.js"></script>
+  <script src="/js/transferToDashboard.js"></script>
+  
+
+  {{!-- only include logout script if the user is logged in --}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+  {{#unless logged_in}}
+  <script src="/js/transferToLogin.js"></script>
+  {{/unless}}
+
+  
+</body>
+
+</html>
