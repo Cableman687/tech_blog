@@ -34,6 +34,7 @@ app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+hbs.registerPartials(__dirname + '/../views/partials');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -41,7 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-app.set('views', path.join(__dirname, "./views"));
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
