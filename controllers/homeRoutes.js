@@ -47,12 +47,17 @@ router.get('/login', (req, res) => {
 
 // Create a new user account
 router.get('/signup', (req, res) => {
+  try{
+    if (req.session.logged_in) {
+      res.redirect('/');
+    } else {
+      res.render('signUp');
+    }
 
-  if (req.session.logged_in) {
-    res.redirect('/');
-  } else {
-    res.render('signUp');
+  }catch (err) {
+    res.status(500).json(err);
   }
+  
 
 });
 
