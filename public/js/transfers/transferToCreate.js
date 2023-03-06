@@ -3,6 +3,8 @@ const transferToCreate = async (event) => {
 
     document.location.replace('/newBlog');
 
-  };
+};
+
+
   
-  document.querySelector('#create-button').addEventListener('click', transferToCreate);
+document.querySelector('#create-button').addEventListener('click', transferToCreate);

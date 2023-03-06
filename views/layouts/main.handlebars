@@ -10,34 +10,38 @@
 </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      The Tech Blog
-    </h1>
+  <header class="display-flex justify-flex-start align-left p-2 bg-link">
+
     {{!-- Only display the  logout button if the user is logged in --}}
     {{#if logged_in}}
-    <nav>
+    <nav class="m-3">
       <button type="button" class="btn" id="logout">logout</button>
     </nav>
     {{/if}} 
 
     {{#unless logged_in}}
-    <nav>
+    <nav class="m-3">
       <button type="button" class="btn" id="login">login</button>
     </nav>
     {{/unless}} 
 
      
-    <nav>
+    <nav class="m-3">
       <button type="button" class="btn" id="home">Home</button>
     </nav>
-     <nav>
+     <nav class="m-3">
       <button type="button" class="btn" id="dashboard-button">Dashboard</button>
     </nav>
 
 
     
   </header>
+  <div>
+    <h1 class="bg-link height1 pl-4 bbottom">
+      The Tech Blog
+    </h1>
+  </div>
+  
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
@@ -45,8 +49,8 @@
       
   </footer>
 
-  <script src="/js/transferToHome.js"></script>
-  <script src="/js/transferToDashboard.js"></script>
+  <script src="/js/transfers/transferHome.js"></script>
+  <script src="/js/transfers/transferToDashboard.js"></script>
   
 
   {{!-- only include logout script if the user is logged in --}}
@@ -55,7 +59,7 @@
   {{/if}}
 
   {{#unless logged_in}}
-  <script src="/js/transferToLogin.js"></script>
+   <script src="/js/transfers/transferToLogin.js"></script>
   {{/unless}}
 
   

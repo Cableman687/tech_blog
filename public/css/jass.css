@@ -85,6 +85,13 @@ abbr[title] {
   /* 2 */
 }
 
+.bbottom {
+ 
+  border-bottom: 3px solid #ec6767;
+  /* margin-bottom: 1rem; */
+
+}
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -372,7 +379,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -400,6 +407,17 @@ p {
   margin: 0 0 1rem;
   line-height: 1.5;
 }
+
+.height1 {
+
+  height:75px;
+}
+
+.height2 {
+
+  height:150px;
+}
+
 
 ul,
 ol,
@@ -478,6 +496,10 @@ a:hover {
 
 .m-5 {
   margin: 1.625rem;
+}
+
+.m-6 {
+  margin: 1.875rem;
 }
 
 .m-auto {
@@ -594,6 +616,10 @@ a:hover {
 
 .ml-5 {
   margin-left: 1.625rem;
+}
+
+.ml-6 {
+  margin-left: 2.0rem;
 }
 
 .ml-auto {
@@ -879,6 +905,10 @@ a:hover {
   text-align: right !important;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
 .text-primary {
   color: #2d3e50 !important;
 }
@@ -932,6 +962,10 @@ a:hover {
   background-color: #d9e9e8 !important;
 }
 
+.bg-lightgrey {
+  background-color: #eaeeed !important;
+}
+
 .bg-dark {
   background-color: #1a1a1a !important;
 }
@@ -945,7 +979,7 @@ a:hover {
 }
 
 .bg-link {
-  background-color: #1b89bc !important;
+  background-color: #52baeb !important;
 }
 
 /* DISPLAY */
@@ -1081,7 +1115,7 @@ a:hover {
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 3px solid #1a1a1a;
   margin-bottom: 1rem;
 }
 

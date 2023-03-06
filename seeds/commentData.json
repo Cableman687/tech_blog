@@ -1,19 +1,19 @@
 [
     {
       "name": "Sal",
-      "description": "I like this first post!",
+      "description": "I like this post!",
       "date": "01/01/2021",
       "blog_id": "1"
     },
     {
        "name": "Sal",
-       "description": "I like this second post!",
+       "description": "I like this post better!!",
        "date": "02/02/2022",
        "blog_id": "2"
     },
     {
         "name": "Sal",
-        "description": "I like this third post!",
+        "description": "I like this is my favourite post!!!",
         "date": "03/03/2023",
         "blog_id": "3"
      }

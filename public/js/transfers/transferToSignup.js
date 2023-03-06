@@ -3,6 +3,6 @@ const transferToSignup = async (event) => {
 
     document.location.replace('/signup');
 
-  };
+};
   
-  document.querySelector('#signup-button').addEventListener('click', transferToSignup);
+document.querySelector('#signup-button').addEventListener('click', transferToSignup);

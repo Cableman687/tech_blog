@@ -11,12 +11,18 @@ const newCommentFormHandler = async (event) => {
   let year = date.getFullYear();
   let fullDate = `${day} / ${month} / ${year}`;
 
+  const blog_id = window.location.toString().split('/')[
+    window.location.toString().split('/').length - 2
+];
+
+console.log(blog_id);
+
   // if both of these have a value (email & password)
   if (description) {
     // Send the email and password to the server.
     const response = await fetch('/api/blogs/:id/comment', {
       method: 'POST',
-      body: JSON.stringify({ description , fullDate }),
+      body: JSON.stringify({ description , fullDate , blog_id}),
       headers: { 'Content-Type': 'application/json' },
     });
 

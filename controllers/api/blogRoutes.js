@@ -42,15 +42,18 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
+
+
 // Add Comment to Blog
 router.post('/:id/comment', withAuth,  async (req, res) => {
+  
   try{
 
     const newComment = await Comment.create({
       name: req.session.user_name,
       description: req.body.description,
       date: req.body.fullDate,
-      blog_id: req.params.id,
+      blog_id: req.body.blog_id,
 
     })
 

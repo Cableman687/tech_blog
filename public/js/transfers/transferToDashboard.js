@@ -3,6 +3,8 @@ const transferToDashboard = async (event) => {
 
     document.location.replace('/dashboard');
 
-  };
+};
+
+
   
-  document.querySelector('#dashboard-button').addEventListener('click', transferToDashboard);
+document.querySelector('#dashboard-button').addEventListener('click', transferToDashboard);

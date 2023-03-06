@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
     });
 
     const blogs = blogData.map((project) => project.get({ plain: true }));
-    console.log(blogs);
+    
     res.render('homepage', {
       blogs,
       // pass in the 'logged in' flag to the template.
