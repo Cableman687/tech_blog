@@ -34,7 +34,7 @@ app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-hbs.registerPartials(__dirname + '/views/partials');
+// hbs.registerPartials(__dirname + '/views/partials');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
