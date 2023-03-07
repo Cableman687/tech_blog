@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 
     const blogs = blogData.map((project) => project.get({ plain: true }));
     
-    res.render('homepage', {
+    res.render('pages/homepage', {
       blogs,
       // pass in the 'logged in' flag to the template.
       logged_in: req.session.logged_in,
@@ -42,7 +42,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('pages/login');
 });
 
 // Create a new user account
@@ -51,7 +51,7 @@ router.get('/signup', (req, res) => {
     if (req.session.logged_in) {
       res.redirect('/');
     } else {
-      res.render('signUp');
+      res.render('pages/signUp');
     }
 
   }catch (err) {
@@ -64,7 +64,7 @@ router.get('/signup', (req, res) => {
 // Create a new blog
 router.get('/newBlog', withAuth, (req, res) => {
 
-  res.render('newBlog', {
+  res.render('pages/newBlog', {
     logged_in: req.session.logged_in,
     user_name: req.session.user_name,
   });
@@ -83,7 +83,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     const blogs = blogData.map((project) => project.get({ plain: true }));
 
-    res.render('dashboard', {
+    res.render('pages/dashboard', {
       blogs,
       // pass in the 'logged in' flag to the template.
       logged_in: req.session.logged_in,
@@ -108,7 +108,7 @@ router.get('/blogs/:id/edit', withAuth, async (req, res) => {
 
     console.log(selectedBlog);
 
-    res.render('updateBlog', {
+    res.render('pages/updateBlog', {
       selectedBlog,
       logged_in: req.session.logged_in,
       user_name: req.session.user_name,
@@ -137,7 +137,7 @@ router.get('/blogs/:id/comment', withAuth, async (req, res) => {
 
     console.log(selectedBlog);
 
-    res.render('commentBlog', {
+    res.render('pages/commentBlog', {
       selectedBlog,
      
       logged_in: req.session.logged_in,
