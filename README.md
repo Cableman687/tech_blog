@@ -17,14 +17,14 @@ To install Node.js please follow the instructions to install Node.js on your mac
 https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs
 
 Dependencies:  \
-bcrypt: ^5.1.0
-connect-session-sequelize: ^7.1.5
-dotenv: ^16.0.3
-express: ^4.18.2
-express-handlebars: ^6.0.7
-express-session: ^1.17.3
-mysql2: ^3.1.2
-sequelize: ^6.29.0
+bcrypt: ^5.1.0 \
+connect-session-sequelize: ^7.1.5 \
+dotenv: ^16.0.3 \
+express: ^4.18.2 \
+express-handlebars: ^6.0.7 \
+express-session: ^1.17.3 \
+mysql2: ^3.1.2 \
+sequelize: ^6.29.0 \
 
 For testing purposes, this project also requires insomnia, which can be downloaded using the link below:
 https://insomnia.rest/download
