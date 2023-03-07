@@ -16,7 +16,7 @@ This can be installed to your computer by simply cloning this repository using t
 To install Node.js please follow the instructions to install Node.js on your machine from the link below:
 https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs
 
-Dependencies:
+Dependencies:  \
 bcrypt: ^5.1.0
 connect-session-sequelize: ^7.1.5
 dotenv: ^16.0.3
@@ -40,26 +40,24 @@ https://insomnia.rest/download
 App URL: \
 https://warm-earth-74370.herokuapp.com/dashboard
 
-- Login
+- Login \
 In the top left-hand corner of the app, click the "login" button.
-- Create a New Account
+- Create a New Account \
 In the top left-hand corner of the app, click the "login" button. If you do not yet have an account, click the "Sign Up Instead" button and populate the name, email and password fields. Once complete select "Create!"
-- See All Blogs
+- See All Blogs \
 Click the "Home" button.
-- Comment on a Blog
+- Comment on a Blog \
 Click a blog anywhere in the homescreen, and populate the comment field when it appears before hitting "Submit!".
-- See Personal Dashboard
+- See Personal Dashboard \
 Click on the "Dashboard" button at the top of the screen.
-- Create a Blog
+- Create a Blog \
 Click on the "Dashboard" button at the top of the screen, and click the "+ New Post" button. Once selected, populate the relevant fields.
-- Update a Blog
+- Update a Blog \
 When in the Dashboard view, click one of your personal Blogs and you will be presented with the option to 'update' or 'delete' your post.
 
 ## License
 
 MIT
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Features
 
