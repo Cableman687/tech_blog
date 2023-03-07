@@ -24,7 +24,7 @@ express: ^4.18.2 \
 express-handlebars: ^6.0.7 \
 express-session: ^1.17.3 \
 mysql2: ^3.1.2 \
-sequelize: ^6.29.0 \
+sequelize: ^6.29.0 
 
 For testing purposes, this project also requires insomnia, which can be downloaded using the link below:
 https://insomnia.rest/download
@@ -58,6 +58,11 @@ When in the Dashboard view, click one of your personal Blogs and you will be pre
 ## License
 
 MIT
+
+## Testing
+For testing blog features, please use account details below: \
+Email: bob@gmail.com \
+Password: password12345 
 
 ## Features
 
